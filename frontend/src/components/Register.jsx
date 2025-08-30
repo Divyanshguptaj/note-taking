@@ -41,7 +41,7 @@ const Register = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://note-taking-1-fw49.onrender.com/api/auth/register",
         {
           ...formData,
           otp,
