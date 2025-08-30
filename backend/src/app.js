@@ -3,11 +3,10 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import authRoutes from './routes/authRoutes.js';
-
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: ["https://note-taking-plum.vercel.app/"], credentials: true }));
+app.use(cors({ origin: ["https://note-taking-plum.vercel.app"], credentials: true }));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
