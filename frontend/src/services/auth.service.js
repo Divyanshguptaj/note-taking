@@ -1,4 +1,4 @@
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api/auth';
+const API_URL = process.env.REACT_APP_API_URL || 'https://note-taking-1-fw49.onrender.com/api/auth';
 
 // Helper function to decode JWT
 const parseJwt = (token) => {
