@@ -24,7 +24,7 @@ const Register = () => {
     setError("");
     setLoading(true);
     try {
-      await axios.post("http://localhost:5000/api/auth/sendOTP", {
+      await axios.post("https://note-taking-1-fw49.onrender.com/api/auth/sendOTP", {
         email: formData.email,
         username: formData.username,
       });
